@@ -1,14 +1,17 @@
 
-x1 = int(input("Ведіть перше число: "))
-x2 = int(input("Введіть друге число: "))
-x = x1 + 1
+start = int(input("Ведіть перше число: "))
+end = int(input("Введіть друге число: "))
+sum = 0
+count = 0
 
-sum += x
-x += 1
-while x < x2:
-    sum =int(input(x1 + x2))
-    x += 1
-    print("the sum of all integers between", x1, "and", x2, "is", sum)
+for i in range(start, end+1):
+    sum += i
+    count += 1
+ang = sum/count
+print("Сума чисел", sum)
+print("Середнє арифметичне", ang)
+
+
 
 
 
